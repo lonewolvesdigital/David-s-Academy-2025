@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>David's Academy International School</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="../img/favicon.ico" rel="icon">
+
+      <!-- Google Web Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Archivo+Black&family=Poppins:wght@400;600;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/33d4d84a2a.js" crossorigin="anonymous"></script>
+
+    <!-- Libraries Stylesheet -->
+    <link href="../lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="css/administration.css" rel="stylesheet">
+
+    <style>
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            left: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .whatsapp-float img {
+            width: 30px;
+            height: 30px;
+        }
+
+        /* Language Dropdown */
+        .dropdown-menu .dropdown-item {
+            color: #000000 !important;
+        }
+
+        .dropdown-menu .dropdown-item.active {
+            background-color: #FE5D37;
+            color: #000000 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" role="status">
+                <span class="sr-only">Chargement...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+<!-- Navbar Start --> 
+<nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-2 px-lg-3 py-lg-0">
+    <div class="d-flex align-items-center justify-content-between w-100">
+        <h2 class="m-0 text-primary d-flex align-items-center">
+            <img src="../img/IMG_1962.PNG" alt="logo" width="50" height="50" />
+            David's Academy International
+        </h2>
+
+        <button type="button" class="navbar-toggler ms-3" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-label="Toggle navigation menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav mx-auto">
+            <a href="fr.html" class="nav-item nav-link">Accueil</a>
+            <a href="classes.html" class="nav-item nav-link">Classes</a>
+            <a href="administration.html" class="nav-item nav-link active">Admin</a>
+            <a href="about.html" class="nav-item nav-link">Infos</a>
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
+        </div>
+
+        <!-- Oxford Logo at the End for Desktop and Tablet -->
+        <span class="navbar-text d-none d-lg-block d-md-block ms-auto">
+            <img src="../img/Oxford OIC Logo.png" alt="Oxford Logo" width="150" height="70" />
+        </span>
+    </div>
+
+    <!-- Oxford Logo for Mobile View -->
+    <span class="navbar-text d-lg-none d-md-none ms-auto">
+        <img id="mobileOxfordLogo" src="../img/Oxford OIC Logo.png" alt="Oxford Logo" />
+    </span>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileLogo = document.getElementById('mobileOxfordLogo');
+            const navbarToggler = document.querySelector('.navbar-toggler');
+            const navbarCollapse = document.getElementById('navbarCollapse');
+    
+            // Initially hide the mobile logo when the navbar is collapsed
+            mobileLogo.style.display = 'none';
+    
+            // Toggle logo visibility when the navbar is collapsed or expanded
+            navbarToggler.addEventListener('click', function () {
+                if (navbarCollapse.classList.contains('show')) {
+                    mobileLogo.style.display = 'none'; // Hide the logo when the navbar is expanded
+                } else {
+                    mobileLogo.style.display = 'block'; // Show the logo when the navbar is collapsed
+                }
+            });
+        });
+    </script>
+    
+</nav>
+<!-- Navbar End -->
+
+
+<!-- Carousel Start -->
+<div class="container-fluid p-0 mb-5">
+    <div class="owl-carousel header-carousel position-relative">
+        <!-- First Carousel Item -->
+        <div class="owl-carousel-item position-relative">
+            <img class="img-fluid carousel-fixed-img" src="../img/e6d4032c-adf5-4b61-987c-438d04679f5f.JPG" alt="Des élèves dans une salle de classe">
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center carousel-overlay">
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col-10 col-lg-8">
+                            <h1 class="display-2 text-white animated slideInDown mb-4">Guider la Vision, Montrer la Voie</h1>
+                            <p class="fs-5 fw-medium text-white mb-4 pb-2">Rencontrez l'Équipe Dévouée au Succès de Votre Enfant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Carousel Item -->
+        <div class="owl-carousel-item position-relative">
+            <img class="img-fluid carousel-fixed-img" src="../img/38cc478e-da94-4e5d-b834-17a438553694.JPG" alt="Activités d'apprentissage à David's Academy">
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center carousel-overlay">
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col-10 col-lg-8">
+                            <h1 class="display-2 text-white animated slideInDown mb-4">L'Éducation Renforcée par un Leadership Expert</h1>
+                            <p class="fs-5 fw-medium text-white mb-4 pb-2">Une Éducation de Qualité Guidée par une Direction Experte</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Carousel End -->
+
+        
+        <!-- Facilities Start -->
+        <div class="container-xxl py-5">
+            <div class="text-center mx-auto mb-5 wow fadeInUp admin-content-width" data-wow-delay="0.1s">
+                <h1 class="mb-3">Activités Parascolaires</h1>
+                <p>Au-delà des études académiques, nous proposons une gamme d'activités parascolaires passionnantes pour encourager la créativité et le bien-être physique, notamment la Danse, le Taekwondo, les Arts Plastiques et la Musique. 
+                    Ces activités aident les élèves à explorer leurs passions et à développer de nouvelles compétences dans un environnement amusant et encourageant.</p>
+            </div>
+            <div class="container">
+                
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-primary">
+                                <span class="bg-primary"></span>
+                                <i class="fa-solid fa-child-reaching fa-3x text-primary"></i>
+                                <span class="bg-primary"></span>
+                            </div>
+                            <div class="facility-text bg-primary">
+                                <h3 class="text-primary mb-3">Danse</h3>
+                                <p class="mb-0">À David's Academy, notre programme de Danse encourage les élèves à s'exprimer par le mouvement.
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-success">
+                                <span class="bg-success"></span>
+                                <i class="fa-solid fa-hand-fist fa-3x text-success"></i>
+                                <span class="bg-success"></span>
+                            </div></i>
+                            <div class="facility-text bg-success">
+                                <h3 class="text-success mb-3">Taekwondo</h3>
+                                <p class="mb-0">Nos cours de Taekwondo aident les élèves à développer la discipline, la force et la confiance en soi.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-warning">
+                                <span class="bg-warning"></span>
+                                <i class="fa-solid fa-masks-theater fa-3x text-warning"></i>
+                                <span class="bg-warning"></span>
+                            </div>
+                            <div class="facility-text bg-warning">
+                                <h3 class="text-warning mb-3">Arts Plastiques</h3>
+                                <p class="mb-0">Dans nos séances d'Arts Plastiques, les élèves explorent leur potentiel créatif en travaillant avec différents matériaux et techniques.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-info">
+                                <span class="bg-info"></span>
+                                <i class="fa-solid fa-music fa-3x text-info"></i>
+                                <span class="bg-info"></span>
+                            </div>
+                            <div class="facility-text bg-info">
+                                <h3 class="text-info mb-3">Musique</h3>
+                                <p class="mb-0">Le programme de Musique à David's Academy initie les élèves au monde du rythme, de la mélodie et de l'harmonie.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Facilities End -->
+
+        <!-- Appointment Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h1 class="mb-3">Processus d'Administration Scolaire</h1>
+            <p><br>
+                Étape 1 : Contactez notre service d'admission<br>
+                Étape 2 : Remplissez le formulaire d'inscription<br>
+                Étape 3 : Recevez la décision finale<br>
+            </p>
+        </div>
+        <div class="bg-light rounded">
+            <div class="row g-0">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="h-100 d-flex flex-column justify-content-center p-5">
+                        <h1 class="mb-4">Contacter l'Administration</h1>
+                        
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control border-0" id="gname" placeholder="Nom du Tuteur">
+                                        <label for="gname">Nom du Tuteur</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control border-0" id="gmail" placeholder="Email du Tuteur">
+                                        <label for="gmail">Email du Tuteur</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control border-0" id="cname" placeholder="Nom de l'Enfant">
+                                        <label for="cname">Nom de l'Enfant</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control border-0" id="cAns" placeholder="Âge de l'Enfant">
+                                        <label for="cAns">Âge de l'Enfant</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control border-0 message-textarea" placeholder="Laissez votre message ici" id="Message"></textarea>
+                                        <label for="Message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Envoyer</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn appointment-image" data-wow-delay="0.5s">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded" src="../img/IMG_3366 (2).jpg" alt="Image du processus d'admission à David's Academy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Appointment End -->
+
+
+       <!-- Footer Start -->
+       <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-4 col-md-6">
+                        <h3 class="text-white mb-4">Contactez-nous</h3>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3" aria-hidden="true"></i> 32. Avenue Lukasa, Gombe. Kinshasa</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3" aria-hidden="true"></i>Téléphone : +243 854 867 777</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3" aria-hidden="true"></i>Info@davidsacademycongo.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href="https://twitter.com/" aria-label="Twitter" rel="noopener noreferrer" target="_blank">
+                                <i class="bi bi-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a class="btn btn-outline-light btn-social" href="https://facebook.com/" aria-label="Facebook" rel="noopener noreferrer" target="_blank">
+                                <i class="bi bi-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a class="btn btn-outline-light btn-social" href="https://youtube.com/" aria-label="YouTube" rel="noopener noreferrer" target="_blank">
+                                <i class="bi bi-youtube" aria-hidden="true"></i>
+                            </a>
+                            <a class="btn btn-outline-light btn-social" href="https://linkedin.com/" aria-label="LinkedIn" rel="noopener noreferrer" target="_blank">
+                                <i class="bi bi-linkedin" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h3 class="text-white mb-4">Liens Rapides</h3>
+                        <a class="btn btn-link text-white-50" href="about.html">À Propos</a>
+                        <a class="btn btn-link text-white-50" href="contact.html">Contactez-nous</a>
+                        <a class="btn btn-link text-white-50" href="classes.html">Nos Classes</a>
+                        <a class="btn btn-link text-white-50" href="appointment.html">Planifier une Visite</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h3 class="text-white mb-4">Heures d'Ouverture</h3>
+                        <p class="mb-1">Lundi - Vendredi</p>
+                        <h6 class="text-light">07h30 - 16h30</h6>
+                        <p class="mb-1">Samedi</p>
+                        <h6 class="text-light">Fermé</h6>
+                        <p class="mb-1">Dimanche</p>
+                        <h6 class="text-light">Fermé</h6>
+                    </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-8 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">David's Academy International </a>, Tous droits réservés.
+
+                            Conçu par <a class="border-bottom" href="https://www.lonewolvesdigital.com">Lone Wolves Digital</a>
+                        </div>
+                        <div class="col-md-4 text-center text-md-end">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-globe"></i> Langue
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                                    <li><a class="dropdown-item" href="../en/en.html">English</a></li>
+                                    <li><a class="dropdown-item active" href="fr.html">Français</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top" aria-label="Retour en haut de la page"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/wow/wow.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../js/main.js"></script>
+    <a href="https://wa.me/+243994990689" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Discutez avec nous sur WhatsApp">
+        <img src="https://img.icons8.com/?size=100&id=uZWiLUyryScN&format=png&color=000000" alt="Icône WhatsApp" />
+    </a>
+</body>
+
+</html>

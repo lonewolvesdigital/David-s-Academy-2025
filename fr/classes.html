@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Classes | David's Academy International School</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="David's Academy International Classes, Daycare, Nursery, Reception, Grade 1, Kinshasa, Oxford Curriculum" name="keywords">
+    <meta content="Explore the classes at David's Academy International, from Daycare to Grade 1. We offer a bilingual French/English education based on the Oxford International Curriculum." name="description">
+
+    <link href="../img/favicon.ico" rel="icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Archivo+Black&family=Poppins:wght@400;600;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="../lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../css/style.css" rel="stylesheet">
+
+    <style>
+        /* WhatsApp Float */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            left: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 1000;
+        }
+
+        .whatsapp-float img {
+            margin-top: 16px;
+            width: 30px;
+            height: 30px;
+        }
+
+        /* Language Dropdown */
+        .dropdown-menu .dropdown-item {
+            color: #000000 !important;
+        }
+
+        .dropdown-menu .dropdown-item.active {
+            background-color: #FE5D37;
+            color: #000000 !important;
+        }
+
+        /* --- Styles moved from inline attributes --- */
+
+        /* Spinner */
+        #spinner .spinner-border {
+            width: 3rem;
+            height: 3rem;
+        }
+
+        /* Carousel Images */
+        /* .carousel-img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        } */
+
+        /* Carousel Caption Overlay */
+        /* .carousel-caption-overlay {
+            background: rgba(0, 0, 0, .2);
+        } */
+
+        /* Oxford Logo in body */
+        .oxford-logo-body {
+            max-width: 150px;
+            height: auto;
+        }
+
+        /* Integration Class Text */
+        .integration-text {
+            text-align: left;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* Class Teacher Images */
+        .class-teacher-img {
+            width: 45px;
+            height: 45px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" role="status">
+                <span class="sr-only">Chargement...</span>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-2 px-lg-3 py-lg-0">
+            <div class="d-flex align-items-center justify-content-between w-100">
+                <h2 class="m-0 text-primary d-flex align-items-center">
+                    <img src="../img/IMG_1962.PNG" alt="logo" width="50" height="50" />
+                    David's Academy International
+                </h2>
+
+                <button type="button" class="navbar-toggler ms-3" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-label="Toggle navigation" aria-controls="navbarCollapse" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto">
+                    <a href="fr.html" class="nav-item nav-link">Accueil</a>
+                    <a href="classes.html" class="nav-item nav-link active">Classes</a>
+                    <a href="administration.html" class="nav-item nav-link">Admin</a>
+                    <a href="about.html" class="nav-item nav-link ">Infos</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+
+                <span class="navbar-text d-none d-lg-block d-md-block ms-auto">
+                    <img src="../img/Oxford OIC Logo.png" alt="Logo Oxford" width="150" height="70" />
+                </span>
+            </div>
+
+            <span class="navbar-text d-lg-none d-md-none ms-auto">
+                <img id="mobileOxfordLogo" src="../img/Oxford OIC Logo.png" alt="Logo Oxford" />
+            </span>
+        </nav>
+        <div class="container-fluid p-0 mb-5">
+            <div class="owl-carousel header-carousel position-relative">
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid carousel-img" src="../img/b167f60d-c823-4792-b573-b13a17ae13eb.JPG" alt="Students in class at David's Academy">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center carousel-caption-overlay">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1 class="display-2 text-white animated slideInDown mb-4">Explorez Nos Parcours d'Apprentissage</h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">De la Garderie à la 1ère Année, Nous Adaptons l'Éducation aux Besoins Uniques de Votre Enfant</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid carousel-img" src="../img/b3f954a7-27bf-44e9-9e3b-f4e18175df96.JPG" alt="Children playing and learning at David's Academy">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center carousel-caption-overlay">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1 class="display-2 text-white animated slideInDown mb-4">Un Voyage de Découverte et de Croissance</h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Apprentissage Pratique, Exploration et Créativité dans Chaque Classe.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class=" mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="text-center mb-3">Des Classes qui Favorisent le Bilinguisme</h1>
+                    <p> Les classes à David's Academy sont conçues pour favoriser le bilinguisme chez
+                        les élèves dès leur plus jeune âge. Nous proposons des classes de la Garderie jusqu'à
+                        l'Année 3 et CE1, avec des options disponibles en français et en anglais à chaque niveau.
+                        Notre classe de Garderie est entièrement bilingue, offrant un environnement propice à
+                        l'apprentissage simultané des deux langues. À partir de 3-4 ans, les élèves
+                        sont affectés soit à une classe française soit à une classe anglaise, mais participent à
+                        un échange linguistique hebdomadaire pour s'exposer à l'autre langue.
+                        À partir de 5 ans, les élèves reçoivent des cours dédiés à la seconde langue,
+                        leur permettant de développer des compétences en lecture, écriture et expression orale
+                        en français et en anglais. Cette approche complète garantit que nos
+                        élèves deviennent des communicants bilingues confiants et fluides.
+                    </p>
+
+
+                    <div>
+                        <div>
+                            <br>
+                            <h1>
+                                Programme International d'Oxford et Programme de la Petite Enfance
+                            </h1>
+                            <p>
+                                Le Programme International d'Oxford (OIC) est un programme complet et internationalement reconnu, conçu pour préparer les élèves à la réussite dans l'enseignement supérieur et au-delà. Dans les premières années, l'OIC se concentre sur le développement des compétences essentielles telles que la communication, la littératie, la numératie et l'apprentissage socio-émotionnel. À travers des activités ludiques et un apprentissage basé sur la recherche, les jeunes apprenants sont encouragés à explorer le monde qui les entoure et à développer l'amour de l'apprentissage. Le programme de la petite enfance de l'OIC fournit une base solide pour la réussite académique future et aide les enfants à développer une attitude positive envers l'apprentissage.
+                            </p>
+
+                            <div class="d-flex align-items-start">
+                                <img src="../img/Oxford OIC Logo.png" alt="Oxford International Curriculum Logo" class="img-fluid oxford-logo-body">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+
+                    <h1 class="text-left mb-3">Notre Classe d'Intégration</h1>
+                    <p class="integration-text"> À David's Academy International, nous croyons que tous les enfants méritent un accès égal à l'éducation.
+                        Notre Classe d'Intégration est conçue pour répondre
+                        aux besoins des élèves ayant des besoins éducatifs spéciaux dans un environnement bilingue.
+                        Notre objectif est de fournir un environnement d'apprentissage stimulant et encourageant où ces élèves peuvent s'épanouir
+                        aux côtés de leurs pairs. Grâce à une attention individualisée, un enseignement spécialisé et des efforts
+                        collaboratifs, nous nous efforçons d'aider nos élèves à atteindre leur plein potentiel et à devenir des participants actifs dans
+                        la communauté de la classe.
+                    </p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="../img/IMG_3413.jpg" alt="Daycare class activity">
+                            </div>
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <a class="d-block text-center h3 mt-3 mb-4" href="#">Garderie</a>
+
+                                <div class="d-flex align-items-center mb-3">
+                                    <img class="rounded-circle flex-shrink-0 class-teacher-img" src="../img/UnIdentifiedPerson.jpg" alt="Hadassa Avzaradel, Enseignante">
+                                    <div class="ms-3">
+                                        <h6 class="text-primary mb-1">Hadassa Avzaradel</h6>
+                                        <small>Enseignante</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <img class="rounded-circle flex-shrink-0 class-teacher-img" src="../img/UnIdentifiedPerson.jpg" alt="Ruth Ngola, Assistante">
+                                    <div class="ms-3">
+                                        <h6 class="text-primary mb-1">Ruth Ngola</h6>
+                                        <small>Assistante</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <img class="rounded-circle flex-shrink-0 class-teacher-img" src="../img/Boanagerse.jpeg" alt="Boanagerse Balonga, Assistant">
+                                    <div class="ms-3">
+                                        <h6 class="text-primary mb-1">Boanagerse Balonga</h6>
+                                        <small>Assistant</small>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row g-1">
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-primary pt-2">
+                                            <h6 class="text-primary mb-1">Âge:</h6>
+                                            <small>18 mois - </small><br>
+                                            <small>2 ans</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="border-top border-3 border-success pt-2">
+                                            <h6 class="text-success mb-1">Horaires:</h6>
+                                            <small>07h30 - 12h30</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="border-top border-3 border-warning pt-2">
+                                            <h6 class="text-warning mb-1">Avantages</h6>
+                                            <small>Développer les compétences de communication</small><br>
+                                            <small>Maîtriser les compétences motrices de base</small><br>
+                                            <small>Construire des compétences sociales</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="../img/IMG_6460.jpg" alt="Nursery class activity">
+                            </div>
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <a class="d-block text-center h3 mt-3 mb-4" href="#">Maternelle</a>
+                                <div class="mb-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="rounded-circle flex-shrink-0 class-teacher-img" src="../img/UnIdentifiedPerson.jpg" alt="Benedicte Amundela, Professeur d'Art">
+                                        <div class="ms-3">
+                                            <h6 class="text-primary mb-1">Benedicte Amundela</h6>
+                                            <small>Professeur d'Art</small>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="rounded-circle flex-shrink-0 class-teacher-img" src="../img/Anthony.jpeg" alt="Antony Tshitenga, Enseignant">
+                                        <div class="ms-3">
+                                            <h6 class="text-primary mb-1">Antony Tshitenga</h6>
+                                            <small>Enseignant</small>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle flex-shrink-0 class-teacher-img" src="../img/Muskaan.jpeg" alt="Muskaan Khanderia, Assistante">
+                                        <div class="ms-3">
+                                            <h6 class="text-primary mb-1">Muskaan Khanderia</h6>
+                                            <small>Assistante</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                                <div class="row g-1">
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-primary pt-2">
+                                            <h6 class="text-primary mb-1">Age:</h6>
+                                            <small>3 years old</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="border-top border-3 border-success pt-2">
+                                            <h6 class="text-success mb-1">Time:</h6>
+                                            <small>07:30am - 12:30pm</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="border-top border-3 border-warning pt-2">
+                                            <h6 class="text-warning mb-1">Avantages:</h6>
+                                            <small>Affiner les compétences linguistiques</small><br>
+                                            <small>Compétences en littératie et numératie</small><br>
+                                            <small>Créativité: Art, musique et théâtre</small><br>
+                                            <small>Compétences sociales et régulation émotionnelle</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="../img/IMG_6460.jpg" alt="CE1 class activity">
+                            </div>
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <a class="d-block text-center h3 mt-3 mb-4" href="#">CE1</a>
+                                <div class="mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle flex-shrink-0 class-teacher-img" src="../img/UnIdentifiedPerson.jpg" alt="Danny Kabanga, Teacher">
+                                        <div class="ms-3">
+                                            <h6 class="text-primary mb-1">Danny Kabanga</h6>
+                                            <small>Teacher</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                                <div class="row g-1">
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-primary pt-2">
+                                            <h6 class="text-primary mb-1">Age:</h6>
+                                            <small>3 years old</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="border-top border-3 border-success pt-2">
+                                            <h6 class="text-success mb-1">Time:</h6>
+                                            <small>07:30am - 12:30pm</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="border-top border-3 border-warning pt-2">
+                                            <h6 class="text-warning mb-1">Avantages:</h6>
+                                            <small>Avantages à venir</small><br>
+                                            <small>Avantages à venir</small><br>
+                                            <small>Avantages à venir</small><br>
+                                            <small>Avantages à venir</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="../img/IMG_6458.jpg" alt="Petite Section class activity">
+                            </div>
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <a class="d-block text-center h3 mt-3 mb-4" href="#">Petite Section</a>
+                                <div class="mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle flex-shrink-0 class-teacher-img" src="../img/Sandra.jpeg" alt="Sandra Duarte, Enseignante">
+                                        <div class="ms-3">
+                                            <h6 class="text-primary mb-1">Sandra Duarte</h6>
+                                            <small>Enseignante</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                                <div class="row g-1">
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-primary pt-2">
+                                            <h6 class="text-primary mb-1">Age:</h6>
+                                            <small>3ans</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="border-top border-3 border-success pt-2">
+                                            <h6 class="text-success mb-1">Heures:</h6>
+                                            <small>07:30am - 12:30 pm</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="border-top border-3 border-warning pt-2">
+                                            <h6 class="text-warning mb-1">Benefits:</h6>
+                                            <small>Pending Benefits</small><br>
+                                            <small>Pending Benefits</small><br>
+                                            <small>Pending Benefits</small><br>
+                                            <small>Pending Benefits</small><br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <br>
+                        <br>
+                        <br>
+                        <div class="classes-item">
+                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="../img/IMG_6455.jpg" alt="Reception class activity">
+                            </div>
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <a class="d-block text-center h3 mt-3 mb-4" href="#">Accueil</a>
+                                <div class="mb-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="rounded-circle flex-shrink-0 class-teacher-img" src="../img/Christine Anuema.jpeg" alt="Christine Anuema, Enseignante">
+                                        <div class="ms-3">
+                                            <h6 class="text-primary mb-1">Christine Anuema</h6>
+                                            <small>Enseignante</small>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="rounded-circle flex-shrink-0 class-teacher-img" src="../img/Chantel.jpeg" alt="Chantal Kasay, Assistante">
+                                        <div class="ms-3">
+                                            <h6 class="text-primary mb-1">Chantal Kasay</h6>
+                                            <small>Assistante</small>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle flex-shrink-0 class-teacher-img" src="../img/Renate.jpeg" alt="Renate Tubajika, Assistante">
+                                        <div class="ms-3">
+                                            <h6 class="text-primary mb-1">Renate Tubajika</h6>
+                                            <small>Assistante</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row g-1">
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-primary pt-2">
+                                            <h6 class="text-primary mb-1">Age:</h6>
+                                            <small>4 years old</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="border-top border-3 border-success pt-2">
+                                            <h6 class="text-success mb-1">Time:</h6>
+                                            <small>Pending time</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="border-top border-3 border-warning pt-2">
+                                            <h6 class="text-warning mb-1">Avantages:</h6>
+                                            <small>Maîtrise des compétences de communication de base</small><br>
+                                            <small>Favoriser la créativité</small><br>
+                                            <small>Capacités de résolution de problèmes</small><br>
+                                            <small>Renforcer les bases en mathématiques et en sciences</small><br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="classes-item">
+                            <br>
+                            <br>
+                            <br>
+                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="../img/IMG_6459.jpg" alt="De Moyenne Section class activity">
+                            </div>
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <a class="d-block text-center h3 mt-3 mb-4" href="#">De Moyenne Section</a>
+                                <div class="mb-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="rounded-circle flex-shrink-0 class-teacher-img" src="../img/UnIdentifiedPerson.jpg" alt="Dorcas Iyitshi, Enseignante">
+                                        <div class="ms-3">
+                                            <h6 class="text-primary mb-1">Dorcas Iyitshi</h6>
+                                            <small>Enseignante</small>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle flex-shrink-0 class-teacher-img" src="../img/Anna.jpeg" alt="Anna Tshidibi, Assistant">
+                                        <div class="ms-3">
+                                            <h6 class="text-primary mb-1">Anna Tshidibi</h6>
+                                            <small>Assistant</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row g-1">
+                                    <div class="col-4">
+                                        <div class="border-top border-3 border-primary pt-2">
+                                            <h6 class="text-primary mb-1">Age:</h6>
+                                            <small>4 years old</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="border-top border-3 border-success pt-2">
+                                            <h6 class="text-success mb-1">Time:</h6>
+                                            <small>Pending time</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="border-top border-3 border-warning pt-2">
+                                            <h6 class="text-warning mb-1">Benefits:</h6>
+                                            <small>Pending Benefits</small><br>
+                                            <small>Pending Benefits</small><br>
+                                            <small>Pending Benefits</small><br>
+                                            <small>Pending Benefits</small><br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-4 col-md-6">
+                        <h3 class="text-white mb-4">Contactez-nous</h3>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3" aria-hidden="true"></i> 32. Avenue Lukasa, Gombe. Kinshasa</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3" aria-hidden="true"></i>Téléphone : +243 854 867 777</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3" aria-hidden="true"></i>Info@davidsacademycongo.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href="https://twitter.com/" aria-label="Twitter" rel="noopener noreferrer" target="_blank">
+                                <i class="bi bi-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a class="btn btn-outline-light btn-social" href="https://facebook.com/" aria-label="Facebook" rel="noopener noreferrer" target="_blank">
+                                <i class="bi bi-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a class="btn btn-outline-light btn-social" href="https://youtube.com/" aria-label="YouTube" rel="noopener noreferrer" target="_blank">
+                                <i class="bi bi-youtube" aria-hidden="true"></i>
+                            </a>
+                            <a class="btn btn-outline-light btn-social" href="https://linkedin.com/" aria-label="LinkedIn" rel="noopener noreferrer" target="_blank">
+                                <i class="bi bi-linkedin" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h3 class="text-white mb-4">Liens Rapides</h3>
+                        <a class="btn btn-link text-white-50" href="about.html">À Propos</a>
+                        <a class="btn btn-link text-white-50" href="contact.html">Contactez-nous</a>
+                        <a class="btn btn-link text-white-50" href="classes.html">Nos Classes</a>
+                        <a class="btn btn-link text-white-50" href="appointment.html">Planifier une Visite</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h3 class="text-white mb-4">Heures d'Ouverture</h3>
+                        <p class="mb-1">Lundi - Vendredi</p>
+                        <h6 class="text-light">07h30 - 16h30</h6>
+                        <p class="mb-1">Samedi</p>
+                        <h6 class="text-light">Fermé</h6>
+                        <p class="mb-1">Dimanche</p>
+                        <h6 class="text-light">Fermé</h6>
+                    </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-8 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">David's Academy International </a>, Tous droits réservés.
+
+                            Conçu par <a class="border-bottom" href="https://www.lonewolvesdigital.com">Lone Wolves Digital</a>
+                        </div>
+                        <div class="col-md-4 text-center text-md-end">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-globe"></i> Langue
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                                    <li><a class="dropdown-item" href="../en/en.html">English</a></li>
+                                    <li><a class="dropdown-item active" href="fr.html">Français</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/wow/wow.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <script src="../js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileLogo = document.getElementById('mobileOxfordLogo');
+            const navbarToggler = document.querySelector('.navbar-toggler');
+            const navbarCollapse = document.getElementById('navbarCollapse');
+
+            // Initially hide the mobile logo when the navbar is collapsed
+            mobileLogo.style.display = 'none';
+
+            // Toggle logo visibility when the navbar is collapsed or expanded
+            navbarToggler.addEventListener('click', function() {
+                if (navbarCollapse.classList.contains('show')) {
+                    mobileLogo.style.display = 'none'; // Hide the logo when the navbar is expanded
+                } else {
+                    mobileLogo.style.display = 'block'; // Show the logo when the navbar is collapsed
+                }
+            });
+        });
+    </script>
+
+    <a href="https://wa.me/+243994990689" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+        <img src="https://img.icons8.com/?size=100&id=uZWiLUyryScN&format=png&color=000000" alt="Chat with us on WhatsApp" />
+    </a>
+</body>
+
+</html> 

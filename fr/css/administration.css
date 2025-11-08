@@ -1,0 +1,44 @@
+/* Spinner styles */
+#spinner .spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Carousel image styles */
+/* .carousel-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+} */
+
+/* Carousel overlay */
+/* .carousel-overlay {
+    background: rgba(0, 0, 0, .2);
+} */
+
+/* Admin content max width */
+.admin-content-width {
+    max-width: 600px;
+}
+
+/* Text area height */
+.message-textarea {
+    height: 100px;
+}
+
+/* Position for appointment image */
+.appointment-image {
+    min-height: 400px;
+}
+
+.appointment-image img {
+    object-fit: cover;
+    max-height: 100%;
+}
+
+/* Fix carousel images */
+/* .carousel-fixed-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+} */
